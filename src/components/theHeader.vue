@@ -1,5 +1,5 @@
 <template>
-  <base-dialog v-if="isDialogshown"></base-dialog>
+  <base-dialog v-if="isDialogshown" :isLoggedin="isLoggedin"></base-dialog>
   <div class="wrap-header">
     <div class="logo">Logo</div>
     <div class="wrap-nav">
@@ -7,7 +7,7 @@
         <router-link class="link" :to="page.path">{{ page.label }}</router-link>
       </div>
     </div>
-    <user-control class="wrap-user-control"></user-control>
+    <user-control class="wrap-user-control" :isLoggedin="isLoggedin"></user-control>
   </div>
 </template>
 
@@ -24,7 +24,8 @@ export default {
   data() {
     return {
       isDialogshown: false,
-      navigation: [{ label: "GPR", isSelected: false, path: "/gpr" }]
+      isLoggedin: false,
+      navigation: [{ label: "GPR", isSelected: false, path: "/gpr" }],
     }
   },
 
@@ -35,12 +36,17 @@ export default {
 
     toggleDialog() {
       this.isDialogshown = !this.isDialogshown
+    },
+
+    logInOut() {
+      this.isLoggedin = !this.isLoggedin
     }
   },
 
   provide() {
     return {
-      toggleDialog: this.toggleDialog
+      toggleDialog: this.toggleDialog,
+      logInOut: this.logInOut
     }
   }
 }
@@ -83,7 +89,7 @@ export default {
     }
   }
   .wrap-user-control {
-    margin: 0 $UI-size-xl 0 auto;
+    margin: 0 $UI-size-reg 0 auto;
   }
 }
 </style>
