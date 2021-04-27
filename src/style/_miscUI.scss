@@ -1,0 +1,34 @@
+/* UI Sizing */
+
+$UI-size-basic: 0.0625rem;          // 1px
+$UI-size-sm: 0.125rem;              // 2px
+$UI-size-md: 0.25rem;               // 4px
+$UI-size-reg: 0.5rem;               // 8px
+$UI-size-lg: 1rem;                  // 16px
+$UI-size-xl: 1.5rem;                // 24px
+$UI-size-xxl: 2rem;                 // 32px
+$UI-size-xxxl: 2.5rem;              // 40px
+$UI-size-kilo-lg: 3rem;             // 48px
+$UI-size-kilo-xl: 3.5rem;           // 56px
+$UI-size-kilo-xxl: 4rem;            // 64px
+$UI-size-kilo-xxxl: 4.5rem;         // 72px
+$UI-size-mega-lg: 5rem;             // 80px
+$UI-size-mega-xl: 5.5rem;           // 88px
+$UI-size-mega-xxl: 6rem;            // 96px
+$UI-size-mega-xxxl: 6.5rem;         // 104px
+$UI-size-giga-lg: 7rem;             // 112px
+$UI-size-giga-xl: 7.5rem;           // 120px
+$UI-size-giga-xxl: 8rem;            // 128px
+$UI-size-giga-xxxl: 8.5rem;         // 136px
+
+
+
+/* Borders */
+
+$border-dark-sm: $UI-size-basic solid $clr-swatchPrimary-300;
+$border-light-sm: $UI-size-basic solid $clr-light;
+
+
+/* Indicators */
+
+$indicator-brand: $UI-size-sm solid $clr-secondary-900;
