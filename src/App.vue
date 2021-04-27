@@ -32,7 +32,7 @@ export default {
 
     logInOut() {
       this.isLoggedin = !this.isLoggedin
-    }
+    },
   },
 
   provide() {

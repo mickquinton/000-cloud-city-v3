@@ -32,7 +32,7 @@ export default {
     isLoggedin: Boolean
   },
 
-  inject: ['toggleDialog', 'logInOut']
+  inject: ['toggleNav', 'toggleDialog', 'logInOut']
 }
 </script>
 

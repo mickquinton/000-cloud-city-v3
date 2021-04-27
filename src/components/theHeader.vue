@@ -7,8 +7,8 @@
         <router-link class="link" :to="page.path">{{ page.label }}</router-link>
       </div>
     </div>
-    <user-control class="wrap-user-control" :isLoggedin="isLoggedin"></user-control>
-     <!-- <user-control class="wrap-user-control"></user-control> -->
+    <!-- <user-control class="wrap-user-control" :isLoggedin="isLoggedin"></user-control> -->
+     <user-control class="wrap-user-control"></user-control>
   </div>
 </template>
 
@@ -21,9 +21,10 @@ export default {
     "user-control": UserControl,
     // "base-dialog": BaseDialog
   },
-  props: {
-    isLoggedin: Boolean
-  },
+
+  // props: {
+  //   isLoggedin: Boolean
+  // },
 
   data() {
     return {
