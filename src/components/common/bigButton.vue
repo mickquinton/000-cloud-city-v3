@@ -10,9 +10,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.main-btn {
-  cursor: pointer;
-  font-weight: 600;
-}
+<style>
+
 </style>

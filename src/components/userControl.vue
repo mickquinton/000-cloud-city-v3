@@ -32,13 +32,12 @@ export default {
     isLoggedin: Boolean
   },
 
-  inject: ['toggleNav', 'toggleDialog', 'logInOut']
+  inject: ["toggleNav", "toggleDialog", "logInOut"]
 }
 </script>
 
 <style lang="scss">
 .wrap-control {
-  
   // LOGGED OUT //
 
   .wrap-logged-out {
@@ -47,6 +46,16 @@ export default {
 
     .button {
       margin: 0 $UI-size-lg 0 0;
+      background-color: $clr-swatchPrimary-850;
+      padding: $UI-size-reg $UI-size-lg $UI-size-reg $UI-size-lg;
+      border-radius: $UI-size-reg;
+      min-width: $UI-size-kilo-xxl;
+      text-align: center;
+      font-size: $font-body2;
+
+      &:hover {
+        background-color: rgba($clr-swatchPrimary-800, 0.8);
+      }
     }
 
     .icon {
@@ -74,6 +83,16 @@ export default {
 
     .button {
       margin: 0 $UI-size-lg 0 0;
+      background-color: $clr-swatchPrimary-850;
+      padding: $UI-size-reg $UI-size-lg $UI-size-reg $UI-size-lg;
+      border-radius: $UI-size-reg;
+      min-width: $UI-size-kilo-xxl;
+      text-align: center;
+      font-size: $font-body2;
+
+      &:hover {
+        background-color: rgba($clr-swatchPrimary-800, 0.8);
+      }
     }
 
     .icon {

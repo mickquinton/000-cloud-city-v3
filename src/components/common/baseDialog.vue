@@ -41,9 +41,9 @@ export default {
     flex-direction: column;
     height: 100%;
     width: 25rem;
-    background-color: $clr-primary;
+    background-color: rgba($clr-black, 1);
     margin-left: auto;
-    color: #fff;
+    color: rgba($clr-white, 1);
 
     .close-icon {
       cursor: pointer;

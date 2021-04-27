@@ -1,46 +1,46 @@
 <template>
-  <base-dialog v-if="isDialogshown" :isLoggedin="isLoggedin"></base-dialog>
+  <!-- <base-dialog v-if="isDialogshown" :isLoggedin="isLoggedin"></base-dialog> -->
   <the-header></the-header>
   <router-view />
 </template>
 
 <script>
 import Header from "./components/theHeader.vue"
-import BaseDialog from "./components/common/baseDialog.vue"
+// import BaseDialog from "./components/common/baseDialog.vue"
 
 export default {
-  data() {
-    return {
-      isDialogshown: false,
-      isLoggedin: false
-    }
-  },
-
-  components: {
+    components: {
     "the-header": Header,
-    "base-dialog": BaseDialog
+    // "base-dialog": BaseDialog
   },
 
-  methods: {
-    toggleNav(page) {
-      page.isSelected = !page.isSelected
-    },
+  // data() {
+  //   return {
+  //     isDialogshown: false,
+  //     isLoggedin: false
+  //   }
+  // },
 
-    toggleDialog() {
-      this.isDialogshown = !this.isDialogshown
-    },
+//   methods: {
+//     toggleNav(page) {
+//       page.isSelected = !page.isSelected
+//     },
 
-    logInOut() {
-      this.isLoggedin = !this.isLoggedin
-    },
-  },
+//     toggleDialog() {
+//       this.isDialogshown = !this.isDialogshown
+//     },
 
-  provide() {
-    return {
-      toggleNav: this.toggleNav,
-      toggleDialog: this.toggleDialog,
-      logInOut: this.logInOut
-    }
-  }
+//     logInOut() {
+//       this.isLoggedin = !this.isLoggedin
+//     },
+//   },
+
+//   provide() {
+//     return {
+//       toggleNav: this.toggleNav,
+//       toggleDialog: this.toggleDialog,
+//       logInOut: this.logInOut
+//     }
+//   }
 }
 </script>
