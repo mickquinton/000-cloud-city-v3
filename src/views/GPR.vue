@@ -8,6 +8,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+body {
+  color: #111;
+}
 
 </style>

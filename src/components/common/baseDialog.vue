@@ -2,26 +2,27 @@
   <section class="wrap-dialog" :dialog="isDialogshown">
     <div class="sideSheet">
       <div class="close-icon" @click="toggleDialog"></div>
-      <div v-if="isLoggedin == false">Boo! I am logged out.</div>
-      <div v-if="isLoggedin == true">Nice! I am logged in.</div>
-      <!-- <user-menu-bl></user-menu-bl> -->
+      <user-menu-bl v-if="isLoggedin == false"></user-menu-bl>
+      <user-menu-al v-if="isLoggedin == true"></user-menu-al>
     </div>
   </section>
 </template>
 
 <script>
-// import UserMenuBL from '../../components/userMenuBL.vue'
+import UserMenuBL from "../../components/userMenuBL.vue"
+import UserMenuAL from "../../components/userMenuAL.vue"
 
 export default {
-  // components: {
-  //   'user-menu-bl': UserMenuBL
-  // },
+  components: {
+    "user-menu-bl": UserMenuBL,
+    "user-menu-al": UserMenuAL
+  },
   props: {
     isDialogshown: Boolean,
-    isLoggedin: Boolean,
+    isLoggedin: Boolean
   },
 
-  inject: ["toggleDialog"]
+  inject: ['toggleNav', 'toggleDialog', 'logInOut']
 }
 </script>
 

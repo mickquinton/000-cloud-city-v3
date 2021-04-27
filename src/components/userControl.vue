@@ -29,16 +29,16 @@ export default {
   },
 
   props: {
-    isDialogshown: Boolean,
     isLoggedin: Boolean
   },
 
-  inject: ["toggleDialog", "logInOut"]
+  inject: ['toggleDialog', 'logInOut']
 }
 </script>
 
 <style lang="scss">
 .wrap-control {
+  
   // LOGGED OUT //
 
   .wrap-logged-out {

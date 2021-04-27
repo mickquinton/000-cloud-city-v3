@@ -1,5 +1,5 @@
 <template>
-  <base-dialog v-if="isDialogshown" :isLoggedin="isLoggedin"></base-dialog>
+  <!-- <base-dialog v-if="isDialogshown" :isLoggedin="isLoggedin"></base-dialog> -->
   <div class="wrap-header">
     <div class="logo">Logo</div>
     <div class="wrap-nav">
@@ -8,47 +8,53 @@
       </div>
     </div>
     <user-control class="wrap-user-control" :isLoggedin="isLoggedin"></user-control>
+     <!-- <user-control class="wrap-user-control"></user-control> -->
   </div>
 </template>
 
 <script>
 import UserControl from "../components/userControl.vue"
-import BaseDialog from "../components/common/baseDialog.vue"
+// import BaseDialog from "../components/common/baseDialog.vue"
 
 export default {
   components: {
     "user-control": UserControl,
-    "base-dialog": BaseDialog
+    // "base-dialog": BaseDialog
+  },
+  props: {
+    isLoggedin: Boolean
   },
 
   data() {
     return {
-      isDialogshown: false,
-      isLoggedin: false,
+      // isDialogshown: false,
+      // isLoggedin: false,
       navigation: [{ label: "GPR", isSelected: false, path: "/gpr" }],
     }
   },
 
-  methods: {
-    toggleNav(page) {
-      page.isSelected = !page.isSelected
-    },
+  // methods: {
+  //   toggleNav(page) {
+  //     page.isSelected = !page.isSelected
+  //   },
 
-    toggleDialog() {
-      this.isDialogshown = !this.isDialogshown
-    },
+  //   toggleDialog() {
+  //     this.isDialogshown = !this.isDialogshown
+  //   },
 
-    logInOut() {
-      this.isLoggedin = !this.isLoggedin
-    }
-  },
+  //   logInOut() {
+  //     this.isLoggedin = !this.isLoggedin
+  //   }
+  // },
 
-  provide() {
-    return {
-      toggleDialog: this.toggleDialog,
-      logInOut: this.logInOut
-    }
-  }
+  // provide() {
+  //   return {
+  //     toggleDialog: this.toggleDialog,
+  //     logInOut: this.logInOut
+  //   }
+  // }
+
+  inject: ['toggleNav', 'toggleDialog', 'logInOut']
 }
 </script>
 
