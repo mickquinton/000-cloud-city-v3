@@ -1,4 +1,5 @@
 <template>
+  <base-dialog v-if="isDialogshown"></base-dialog>
   <div class="wrap-header">
     <div class="logo">Logo</div>
     <div class="wrap-nav">
@@ -11,29 +12,35 @@
 </template>
 
 <script>
-import UserControl from '../components/userControl.vue'
+import UserControl from "../components/userControl.vue"
+import BaseDialog from "../components/common/baseDialog.vue"
 
 export default {
-
-components: {
-  'user-control': UserControl
-},
+  components: {
+    "user-control": UserControl,
+    "base-dialog": BaseDialog
+  },
 
   data() {
     return {
-      navigation: [
-        { label: "GPR", isSelected: false, path: "/gpr" },
-        // { label: "About", isSelected: false, path: "/about" },
-        // { label: "Sports", isSelected: false, path: "/sports/judo" },
-        // { label: "Pie Chart", isSelected: false, path: "/pie-chart" },
-        // { label: "Cart", isSelected: false, path: "/cart" }
-      ]
+      isDialogshown: false,
+      navigation: [{ label: "GPR", isSelected: false, path: "/gpr" }]
     }
   },
 
   methods: {
     toggleNav(page) {
       page.isSelected = !page.isSelected
+    },
+
+    toggleDialog() {
+      this.isDialogshown = !this.isDialogshown
+    }
+  },
+
+  provide() {
+    return {
+      toggleDialog: this.toggleDialog
     }
   }
 }
