@@ -1,9 +1,13 @@
 <template>
-  <div>This is Home</div>
+  <div>This is Home BEFORE LOGIN.</div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    isLoggedin: Boolean
+  }
+}
 </script>
 
 <style lang="scss">

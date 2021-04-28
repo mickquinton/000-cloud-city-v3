@@ -2,7 +2,7 @@
   <base-dialog v-if="isDialogshown" :isLoggedin="isLoggedin"></base-dialog>
   <div class="wrap-header">
     <router-link to="/"><div class="logo"></div></router-link>
-    <div class="wrap-nav">
+    <div class="wrap-nav" v-if="isLoggedin == true">
       <div class="nav-link" v-for="page in navigation" :key="page" :class="{ selected: page.isSelected === true }" @click="toggleNav(page)">
         <router-link class="link" :to="page.path">{{ page.label }}</router-link>
       </div>
@@ -30,7 +30,12 @@ export default {
     return {
       isDialogshown: false,
       isLoggedin: false,
-      navigation: [{ label: "Reports", isSelected: false, path: "/reports" }]
+      navigation: [
+        { label: "My account", isSelected: false, path: "/my-account" },
+        { label: "Assets", isSelected: false, path: "/assets" },
+        { label: "Reports", isSelected: false, path: "/reports" },
+        { label: "Payments", isSelected: false, path: "/payments" }
+      ]
     }
   },
 
@@ -43,8 +48,17 @@ export default {
       this.isDialogshown = !this.isDialogshown
     },
 
-    logInOut() {
-      this.isLoggedin = !this.isLoggedin
+    // logInOut() {
+    //   this.isLoggedin = !this.isLoggedin
+    // }
+
+     logInOut() {
+       this.isLoggedin = !this.isLoggedin
+       if (this.isLoggedin === false){
+         return this.$router.push({ path: "/" })
+       } else { 
+         return this.$router.push({ path: "/homeAL" })
+       } 
     }
   },
 

@@ -8,6 +8,43 @@ const routes = [
     component: Home
   },
 
+  {
+    path: "/homeAL",
+    name: "Home AL",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ "../views/HomeAL.vue")
+  },
+
+
+  {
+    path: "/my-account",
+    name: "My Account",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ "../views/MyAccount.vue")
+  },
+
+  {
+    path: "/assets",
+    name: "Assets",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ "../views/Assets.vue")
+  },
+
+  {
+    path: "/payments",
+    name: "Payments",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ "../views/Payments.vue")
+  },
+
   // REPORTS //
 
   {

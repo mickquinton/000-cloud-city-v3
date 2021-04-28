@@ -48,7 +48,7 @@
 export default {
   data() {
     return {
-      menuAL: [{ label: "Home" }, { label: "My account" }, { label: "Assets" }, { label: "Reports" }, { label: "Loot" }],
+      menuAL: [{ label: "Home" }, { label: "My account" }, { label: "Assets" }, { label: "Reports" }, { label: "Payments" }],
       menuALSecondary: [{ label: "About us" }, { label: "Terms and conditions" }, { label: "FAQs" }, { label: "Announcements" }, { label: "Contact us" }]
     }
   },
