@@ -1,9 +1,9 @@
 <template>
-  <div class="wrap-gpr">
+  <div class="wrap-reports">
     <div class="wrap-left-panel">
       <left-panel></left-panel>
     </div>
-    <div>This is the GPR page.</div>
+    <div>This is the Reports Summary.</div>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ body {
   background-color: rgba($clr-baseCanvas-light, 1);
 }
 
-.wrap-gpr {
+.wrap-reports {
   display: flex;
 
   .wrap-left-panel {
