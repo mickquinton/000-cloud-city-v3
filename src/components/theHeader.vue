@@ -22,10 +22,6 @@ export default {
     "base-dialog": BaseDialog
   },
 
-  // props: {
-  //   isLoggedin: Boolean
-  // },
-
   data() {
     return {
       isDialogshown: false,
@@ -48,10 +44,6 @@ export default {
       this.isDialogshown = !this.isDialogshown
     },
 
-    // logInOut() {
-    //   this.isLoggedin = !this.isLoggedin
-    // }
-
      logInOut() {
        this.isLoggedin = !this.isLoggedin
        if (this.isLoggedin === false){
@@ -68,8 +60,6 @@ export default {
       logInOut: this.logInOut
     }
   }
-
-  // inject: ['toggleNav', 'toggleDialog', 'logInOut']
 }
 </script>
 
