@@ -8,7 +8,7 @@
 
     <!-- Logged in -->
     <div class="wrap-logged-in" v-if="isLoggedin == true">
-      <base-button class="button" :btnLabel="btnLabels[1]" @click="logInOut"></base-button>
+      <!-- <base-button class="button" :btnLabel="btnLabels[1]" @click="logInOut"></base-button> -->
       <div class="icon" @click="toggleDialog"></div>
     </div>
   </div>

@@ -20,7 +20,7 @@
     <!-- Change language -->
     <div class="wrap-change-language">
       <div>English</div>
-      <div class="flag-icon">Flag icon</div>
+      <div class="flag-icon"></div>
     </div>
 
     <!-- Redirect -->
@@ -121,6 +121,12 @@ body {
     }
 
     .flag-icon {
+      background-image: url("./../assets/icon-flag-en.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: $UI-size-xl;
+      width: $UI-size-xl;
       margin-left: auto;
     }
   }

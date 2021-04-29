@@ -2,7 +2,7 @@
   <base-dialog v-if="isDialogshown" :isLoggedin="isLoggedin"></base-dialog>
   <div class="wrap-header">
     <router-link to="/" v-if="isLoggedin == false"><div class="logo"></div></router-link>
-     <router-link to="/homeAL"  v-if="isLoggedin == true"><div class="logo"></div></router-link>
+    <router-link to="/homeAL" v-if="isLoggedin == true"><div class="logo"></div></router-link>
     <div class="wrap-nav" v-if="isLoggedin == true">
       <div class="nav-link" v-for="page in navigation" :key="page" :class="{ selected: page.isSelected === true }" @click="toggleNav(page)">
         <router-link class="link" :to="page.path">{{ page.label }}</router-link>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ICON</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <polygon id="path-3" points="0 0 24 0 24 24 0 24"></polygon>
+    </defs>
+    <g id="01---Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@960---Nav-drawer-BL" transform="translate(-679.000000, -559.000000)">
+            <g id="nav-drawer" transform="translate(663.000000, 79.000000)">
+                <g id="links" transform="translate(0.000000, 276.000000)">
+                    <g id="en" transform="translate(0.000000, 192.000000)">
+                        <g id="LEADING-ICON" transform="translate(4.000000, 0.000000)">
+                            <g id="Group" transform="translate(12.000000, 12.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Mask" fill-rule="nonzero"></g>
+                                <g id="gb" mask="url(#mask-2)">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <g id="Path"></g>
+                                    <g id="Group" mask="url(#mask-4)">
+                                        <g transform="translate(-24.288000, 0.000000)">
+                                            <polygon id="Path" fill="#012169" points="0 0 49.152 0 49.152 24.576 0 24.576"></polygon>
+                                            <path d="M0,0 L0,2.7475968 L43.6568064,24.576 L49.152,24.576 L49.152,21.8284032 L5.4951936,0.0049152 L0,0.0049152 L0,0 Z M49.152,0 L49.152,2.7475968 L5.4951936,24.576 L0,24.576 L0,21.8284032 L43.6568064,0 L49.152,0 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                            <path d="M20.4816384,0 L20.4816384,24.576 L28.6703616,24.576 L28.6703616,0 L20.4816384,0 Z M0,8.1936384 L0,16.3823616 L49.152,16.3823616 L49.152,8.1936384 L0,8.1936384 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                            <path d="M0,9.8304 L0,14.7456 L49.152,14.7456 L49.152,9.8304 L0,9.8304 Z M22.1184,0 L22.1184,24.576 L27.0336,24.576 L27.0336,0 L22.1184,0 Z M0,24.576 L16.3823616,16.3823616 L20.054016,16.3823616 L3.661824,24.576 L0,24.576 Z M0,0 L16.3823616,8.1936384 L12.7205376,8.1936384 L0,1.8333696 L0,0 Z M29.1028992,8.1936384 L45.490176,0 L49.152,0 L32.7696384,8.1936384 L29.097984,8.1936384 L29.1028992,8.1936384 Z M49.1569152,24.576 L32.7647232,16.3823616 L36.4265472,16.3823616 L49.152,22.7426304 L49.152,24.576 L49.1569152,24.576 Z" id="Shape" fill="#C8102E" fill-rule="nonzero"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
