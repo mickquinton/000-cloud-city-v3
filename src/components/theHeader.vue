@@ -28,7 +28,7 @@ export default {
       isDialogshown: false,
       isLoggedin: false,
       navigation: [
-        { label: "My account", isSelected: false, path: "/my-account" },
+        // { label: "My account", isSelected: false, path: "/my-account" },
         // { label: "Assets", isSelected: false, path: "/assets" },
         { label: "Reports", isSelected: false, path: "/reports" },
         // { label: "Payments", isSelected: false, path: "/payments" }

@@ -1,9 +1,11 @@
 <template>
-  <div class="wrap-horde">
-    <div class="wrap-left-panel">
-      <left-panel></left-panel>
+  <div class="wrap-main">
+    <div class="wrap-content">
+      <div class="wrap-left-panel">
+        <left-panel></left-panel>
+      </div>
+      <div class="wrap-right-content">This is the Horde Summary.</div>
     </div>
-    <div>This is the Horde page.</div>
   </div>
 </template>
 
@@ -19,15 +21,28 @@ export default {
 
 <style lang="scss">
 body {
-  color: #111;
-  background-color: rgba($clr-baseCanvas-light, 1);
+  background-color: $clr-baseCanvas-light;
+  color: $clr-primary;
 }
 
-.wrap-horde {
+.wrap-main {
   display: flex;
+  justify-content: center;
+  max-width: 100%;
+  .wrap-content {
+    display: flex;
+    flex-basis: 90%;
+    margin: $UI-size-xl $UI-size-lg;
 
-  .wrap-left-panel {
-    margin: $UI-size-xl;
+    .wrap-left-panel {
+      flex-basis: 30%;
+      margin-right: $UI-size-xl;
+    }
+
+    .wrap-right-content {
+      flex-basis: 70%;
+      background-color: $clr-white;
+    }
   }
 }
 </style>
