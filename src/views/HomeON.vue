@@ -108,4 +108,104 @@ body {
     }
   }
 }
+
+// Media Query //
+
+@media only screen and (max-width: 1024px) {
+  .wrap-main {
+    // display: flex;
+    // justify-content: center;
+    max-width: 100%;
+    .main-content {
+      flex-basis: 80%;
+      margin: $UI-size-xl 0;
+
+      .wrap-summary {
+        background-color: $clr-white;
+        border-radius: $UI-size-reg;
+        height: 50rem;
+        margin-bottom: $UI-size-xl;
+        padding: $UI-size-xl;
+
+        .main-summary {
+          background-color: $clr-swatchPrimary-250;
+          height: $UI-size-mega-xxl;
+          border-radius: $UI-size-reg;
+          margin-bottom: $UI-size-xl;
+        }
+
+        .main-graphs {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .graph-box {
+            flex-basis: 45.5%;
+            border-radius: $UI-size-reg;
+            border: $UI-size-basic solid $clr-swatchPrimary-300;
+            padding: $UI-size-lg;
+            margin: $UI-size-reg $UI-size-reg;
+
+            .line-graph-box {
+              height: $UI-size-ext-001;
+              background-color: $clr-swatchPrimary-300;
+              margin-bottom: $UI-size-lg;
+            }
+          }
+        }
+      }
+
+      .wrap-monthly-data {
+        .monthly-data {
+          display: flex;
+          align-items: center;
+          background-color: $clr-white;
+          border-radius: $UI-size-reg;
+          height: $UI-size-mega-xxl;
+          margin-bottom: $UI-size-lg;
+          padding: 0 $UI-size-xxl;
+
+          .month {
+            font-weight: 600;
+          }
+
+          .wrap-data {
+            background-color: $clr-swatchPrimary-250;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .wrap-monthly-data {
+      display: flex;
+      flex-direction: column;
+    .monthly-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $clr-white;
+      border-radius: $UI-size-reg;
+      height: $UI-size-mega-xxl;
+      margin-bottom: $UI-size-lg;
+      padding: 0 $UI-size-xxl;
+
+      .month {
+        font-weight: 600;
+        margin-right: auto;
+      }
+
+      .wrap-data {
+        background-color: $clr-swatchPrimary-250;
+        text-align: left;
+        margin-right: auto;
+        margin-top: $UI-size-lg;
+        width: 100%;
+      }
+    }
+  }
+}
 </style>
