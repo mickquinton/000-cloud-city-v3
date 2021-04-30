@@ -1,13 +1,26 @@
 <template>
-  <div>This is the My Account page.</div>
+  <div class="wrap-main">
+    <div class="main-card">Main card</div>
+    <div>
+      <div>Left grp</div>
+      <div>Right grp</div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
-<style>
+<style lang="scss">
+.wrap-main {
+  // display: flex;
+  // justify-content: center;
+  align-content: center;
+  max-width: 100%;
 
+  .main-card {
+    
+  }
+}
 </style>

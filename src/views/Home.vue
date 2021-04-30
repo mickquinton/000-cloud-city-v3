@@ -62,7 +62,6 @@ body {
 
     .main-banner {
       margin: $UI-size-xl $UI-size-reg;
-      height: 33.5rem;
       flex-basis: 60%;
       background-color: $clr-white;
       border: $UI-size-basic solid $elev-soft-md;
@@ -71,16 +70,18 @@ body {
 
     .wrap-small-banner {
       margin: $UI-size-xl $UI-size-reg;
-      height: 32rem;
       flex-basis: 40%;
+
       .small-banner {
         display: flex;
+        justify-content: space-between;
+        // height: 6.5rem;
+        align-items: center;
         background-color: $clr-white;
         margin: 0 0 $UI-size-lg 0;
-        height: 10.5rem;
+        padding: $UI-size-xxl 0 $UI-size-xxl 0;
         border-radius: $UI-size-reg;
         border: $UI-size-basic solid $elev-soft-md;
-        align-items: center;
         cursor: pointer;
 
         .thumb {
@@ -90,7 +91,8 @@ body {
         }
 
         .texts {
-          margin-right: $UI-size-lg;
+          flex-basis: 90%;
+          margin-right: $UI-size-xl;
 
           .title {
             font-weight: 600;
@@ -98,6 +100,51 @@ body {
 
           .subtext {
             color: rgba($clr-black, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query //
+
+@media only screen and (max-width: 1024px) {
+  .wrap-home-content {
+    display: flex;
+    // flex-direction: column;
+    max-width: 100%;
+
+    .home-content {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 90%;
+      padding-bottom: 2rem;
+
+      .main-banner {
+        margin: $UI-size-xl $UI-size-reg $UI-size-xl $UI-size-reg;
+        flex-basis: 60%;
+        background-color: $clr-white;
+        border: $UI-size-basic solid $elev-soft-md;
+        border-radius: $UI-size-reg;
+      }
+
+      .wrap-small-banner {
+        margin: $UI-size-sm $UI-size-reg;
+
+        .small-banner {
+          flex-basis: 33%;
+          background-color: $clr-white;
+          justify-content: stretch;
+          margin: 0 0 $UI-size-lg 0;
+          padding: $UI-size-xl 0 $UI-size-xl 0;
+          border-radius: $UI-size-reg;
+          border: $UI-size-basic solid $elev-soft-md;
+          cursor: pointer;
+
+          .texts {
+            flex-basis: 90%;
+            margin: $UI-size-xl;
           }
         }
       }

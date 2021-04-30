@@ -31,15 +31,15 @@ export default {
 
 <style lang="scss">
 .banner-image {
+  // background-color: $clr-swatchPrimary-350;
   background-image: url("../../assets/home/sample-banner.jpeg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  height: $UI-size-ext-002;
-  // background-color: $clr-swatchPrimary-400;
+  background-size: cover;
+  background-position: top;
+  min-height: 15.5rem;
   border-radius: $UI-size-reg $UI-size-reg 0 0;
   text-align: center;
-  line-height: 18rem;
+  width: 100%;
 }
 
 .title-group {
@@ -76,6 +76,7 @@ export default {
 .login-txt {
   display: flex;
   justify-content: center;
+  margin: $UI-size-xxl;
 
   .message {
     color: rgba($clr-black, 0.6);
