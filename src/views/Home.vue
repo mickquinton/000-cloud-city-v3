@@ -47,8 +47,8 @@ export default {
 
 <style lang="scss">
 body {
-  color: #111;
   background-color: $clr-baseCanvas-light;
+  color: $clr-primary;
 }
 
 .wrap-home-content {
@@ -99,7 +99,7 @@ body {
           }
 
           .subtext {
-            color: rgba($clr-black, 0.5);
+            color: rgba($clr-primary, 0.5);
           }
         }
       }

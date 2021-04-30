@@ -19,6 +19,9 @@ export default {}
 </script>
 
 <style lang="scss">
+body {
+  color: $clr-primary;
+}
 .wrap-main {
   padding: $UI-size-xl;
 

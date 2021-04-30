@@ -1,9 +1,11 @@
 <template>
   <div class="wrap-main">
-    <div class="main-card">Main card</div>
-    <div>
-      <div>Left grp</div>
-      <div>Right grp</div>
+    <div class="main">
+      <div class="main-card">Main card</div>
+      <div class="details">
+        <div>Left grp</div>
+        <div>Right grp</div>
+      </div>
     </div>
   </div>
 </template>
@@ -14,13 +16,23 @@ export default {}
 
 <style lang="scss">
 .wrap-main {
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   align-content: center;
   max-width: 100%;
 
-  .main-card {
-    
+  .main {
+    flex-basis: 80%;
+
+    .main-card {
+      background-color: $clr-white;
+      border-radius: $UI-size-reg;
+      height: $UI-size-mega-xl;
+    }
+
+    .details {
+      display: flex;
+    }
   }
 }
 </style>

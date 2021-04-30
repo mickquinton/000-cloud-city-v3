@@ -1,6 +1,6 @@
 <template>
-  <div class="wrap-homeAL-content">
-    <div class="homeAL-content">
+  <div class="wrap-homeAL">
+    <div class="wrap-homeAL-content">
       <summary-box class="wrap-summary-main"></summary-box>
       <div class="wrap-monthly-summary">
         <div class="monthly-summary" v-for="data in monthlyData" :key="data">
@@ -18,20 +18,20 @@
 </template>
 
 <script>
-import SummaryBox from '../components/home/summaryAL.vue'
+import SummaryBox from "../components/home/summaryAL.vue"
 // import MonthlySummary from '../components/home/monthlySummaryAL.vue'
 export default {
   components: {
-    'summary-box': SummaryBox,
+    "summary-box": SummaryBox
     // 'monthly-summary': MonthlySummary
   },
 
   data() {
     return {
-      monthlyData:[
-        {month: 'January', label1:'Commission balance', value1: 'PHP 999,999,999.99', label2: 'Actives', value2: 999, label3: 'New deposits', value3: 999, label4: 'Sign ups', value4: 999},
-        {month: 'February', label1:'Commission balance', value1: 'PHP 999,999,999.99', label2: 'Actives', value2: 999, label3: 'New deposits', value3: 999, label4: 'Sign ups', value4: 999},
-        {month: 'March', label1:'Commission balance', value1: 'PHP 999,999,999.99', label2: 'Actives', value2: 999, label3: 'New deposits', value3: 999, label4: 'Sign ups', value4: 999},
+      monthlyData: [
+        { month: "January", label1: "Commission balance", value1: "PHP 999,999,999.99", label2: "Actives", value2: 999, label3: "New deposits", value3: 999, label4: "Sign ups", value4: 999 },
+        { month: "February", label1: "Commission balance", value1: "PHP 999,999,999.99", label2: "Actives", value2: 999, label3: "New deposits", value3: 999, label4: "Sign ups", value4: 999 },
+        { month: "March", label1: "Commission balance", value1: "PHP 999,999,999.99", label2: "Actives", value2: 999, label3: "New deposits", value3: 999, label4: "Sign ups", value4: 999 }
       ]
     }
   }
@@ -39,15 +39,19 @@ export default {
 </script>
 
 <style lang="scss">
-.wrap-homeAL-content {
-  display: flex;
-  max-width: 100%;
-  justify-content: center;
+body {
+  background-color: $clr-baseCanvas-light;
+}
 
-  .homeAL-content {
-    flex-basis: 85%;
+.wrap-homeAL {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+
+  .wrap-homeAL-content {
+    flex-basis: 80%;
     margin: $UI-size-xl 0;
-    
+
     .wrap-summary-main {
       // margin: $UI-size-xl;
       background-color: $clr-white;
@@ -79,5 +83,4 @@ export default {
     }
   }
 }
-
 </style>
